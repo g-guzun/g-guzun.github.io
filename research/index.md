@@ -40,3 +40,16 @@
 - Guzun, Gheorghi, Guadalupe Canahuate, David Chiu, and Jason Sawin. "A tunable compression framework for bitmap indices." In Data Engineering (ICDE), 2014 IEEE 30th International Conference on, pp. 484-495. Chicago, IL, USA, 2014. IEEE ICDE, 2014.
 
 - Doan, Fredton, David Chiu, Brasil Perez Lukes, Jason Sawin, Gheorghi Guzun, and Guadalupe Canahuate. "Dynamic bitmap index recompression through workload-based optimizations." In Proceedings of the 17th International Database Engineering & Applications Symposium, pp. 96-105. Barcelona, Spain, 2013. ACM, 2013.
+
+### Doctoral Dissertation
+
+- Guzun, Gheorghi. Distributed indexing and scalable query processing for interactive big data explorations. Doctoral Dissertation. University of Iowa, 2016.
+
+### Research Awards
+
+- National Science Foundation (NSF) CAREER Award: Scalable and Adaptable Sparsity-driven Methods for more Efficient AI Systems, 2023. Role: Principal Investigator
+
+- Featured work in SJSU Research Foundation Annual Report (2024), San Jose State University Research Foundation. Role: Principal Investigator
+
+- Davidson Student Scholar Award, (multiple awards) (supporting graduate students’ research),
+San José State University, San José, CA.
