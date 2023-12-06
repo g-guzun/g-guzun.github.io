@@ -3,8 +3,8 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-title: David Chiu
-description: Professor of Computer Science
-institution: University of Puget Sound
-office: Thompson Hall 303
-email: dchiu@pugetsound.edu
+title: Gheorghi Guzun
+description: Assistant Professor of Computer Engineering
+institution: San Jose State University
+office: ENG 283E
+email: gheorghi.guzun@sjsu.edu
