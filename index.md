@@ -17,7 +17,7 @@ His current research interests are at the intersection of data management and ma
 </div>
 
 
-Here's a link to his [curriculum vitae](CV.pdf).
+Link to [Curriculum Vitae](CV.pdf).
 
 
 <!--### Recent Activities
