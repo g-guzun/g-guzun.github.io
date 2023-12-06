@@ -1,4 +1,0 @@
-P2
-W H
-MAX_PIXEL_VALUE
-<<all pixel values>>

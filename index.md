@@ -45,5 +45,4 @@ Here's a link to his [curriculum vitae](CV.pdf).
 - (10/2018) Our paper on distributed bitmap indexing has been accepted for publication at BDCAT'18. It was nominated for the Best Paper award. -->
 
 ### Quick Links
-
-- Leave the CS department [some feedback](https://forms.gle/Ltassc7BQkNfnnXB7).
+<!--- Leave the CS department [some feedback](https://forms.gle/Ltassc7BQkNfnnXB7). -->

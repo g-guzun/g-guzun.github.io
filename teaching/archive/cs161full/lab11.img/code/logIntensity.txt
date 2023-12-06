@@ -1,4 +1,0 @@
-> Pixel p = new Pixel(50);
-> p.logIntensity(1.5);
-> p.getValue()
-5  (int)
