@@ -1,4 +1,4 @@
-### Biosketch
+### Bio
 
 <div style="display: grid; grid-template-columns: auto auto; column-gap: 15px;">
   <div>
@@ -24,5 +24,5 @@ Link to [Curriculum Vitae](CV.pdf).
 - (10/2023) Our paper, "Workload-Aware Cache Management of Bitmap Indices" has been accepted for publication at BDCAT 2023. Congratulations to my student co-author Julia Kaeppel!
 -->
 
-### Quick Links
-<!--- Leave the CS department [some feedback](https://forms.gle/Ltassc7BQkNfnnXB7). -->
+<!--### Quick Links
+- Leave the CS department [some feedback](https://forms.gle/Ltassc7BQkNfnnXB7). -->
