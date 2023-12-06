@@ -1,0 +1,8 @@
+public static void main(String[] args)
+{
+	Image myImg = new Image("grumpycat.pgm");
+	myImg.rotateClockwise();
+	myImg.rotateClockwise();
+	myImg.InverseTransform();
+	myImg.save("grumpycatNew.pgm");
+}

@@ -1,0 +1,4 @@
+> Pixel p = new Pixel(10);
+> p.powerLawIntensity(.75, 1.5);
+> p.getValue()
+23   (int)

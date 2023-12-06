@@ -1,0 +1,47 @@
+* {
+  font-family: "arial";
+}
+
+img {
+  height: 120px;
+}
+
+table {
+  background-color: rgb(50, 100, 85);
+  color: #ffffff;
+}
+o #headingInfo {
+  font-size: 28pt;
+}
+
+td.score {
+  font-size: 12pt;
+  border: solid #000000;
+  text-align: center;
+  height: 30px;
+  width: 20px;
+}
+
+td.total {
+  font-size: 12pt;
+  border: solid #ffffff;
+  text-align: center;
+  height: 30px;
+  width: 20px;
+}
+
+.headings > td {
+  border: none;
+}
+
+.controlCenter {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  border: outset;
+}
+
+button {
+  font-family: courier, monospace;
+}
+

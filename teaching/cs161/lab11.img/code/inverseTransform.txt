@@ -1,0 +1,15 @@
+> Image myImg = new Image("test.pgm");
+> System.out.println(myImg);
+P2
+3 2
+255
+0 127 255
+255 127 0
+
+> myImg.inverseTransform();
+> System.out.println(myImg);
+P2
+3 2
+255
+255 128 0
+0 128 255

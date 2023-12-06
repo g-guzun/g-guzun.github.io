@@ -1,0 +1,1 @@
+var = (TargetDataType) (expression);

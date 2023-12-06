@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scoreboard Operator</title>
+    <link rel="stylesheet" href="scoreboard.css" />
+  </head>
+  <body>
+    <!-- SCORE BOARD -->
+    <table>
+      <thead>
+        <tr>
+          <th id="headingInfo">DAVID FIELD</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table>
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>R</th>
+                </tr>
+                <tr>
+                  <td>AWAY</td>
+                  <td name="score[away][0]" class="score">0</td>
+                  <td name="score[away][1]" class="score">0</td>
+                  <td name="score[away][2]" class="score">0</td>
+                  <td name="score[away][3]" class="score">0</td>
+                  <td name="score[away][4]" class="score">0</td>
+                  <td name="score[away][5]" class="score">0</td>
+                  <td name="score[away][6]" class="score">0</td>
+                  <td name="runs[away]" class="total">0</td>
+                </tr>
+                <tr>
+                  <td>HOME</td>
+                  <td name="score[home][0]" class="score">0</td>
+                  <td name="score[home][1]" class="score">0</td>
+                  <td name="score[home][2]" class="score">0</td>
+                  <td name="score[home][3]" class="score">0</td>
+                  <td name="score[home][4]" class="score">0</td>
+                  <td name="score[home][5]" class="score">0</td>
+                  <td name="score[home][6]" class="score">0</td>
+                  <td name="runs[home]" class="total">0</td>
+                </tr>
+              </tbody>
+            </table>
+         </td>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <img src="images/ups.png">
+          </td>
+        </tr>
+ 
+      </tbody>
+    </table>
+
+    <!-- CONTROL CENTER -->
+    <br /><br />
+    <table class="controlCenter">
+      <thead>
+        <tr>
+          <th id="headingInfo" colspan="4">CONTROL CENTER</th>
+        </tr>
+        <tr>
+          <th colspan="4">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label for="who">Who:</label>
+          </td>
+          <td>
+            <select id="who">
+              <option value="away">Away</option>
+              <option value="home">Home</option>
+            </select>
+          </td>
+          <td>
+            <label for="inning">Inning:</label>
+          </td>
+          <td>
+            <select id="inning">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Runs:</td>
+          <td><button id="runUp">+</button> <button id="runDown">-</button></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td>Sound:</td>
+          <td><button name="playEffect">&#127925;</button> <button name="playSong">&#127929</button></td>
+          <td colspan="2"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>

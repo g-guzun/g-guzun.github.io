@@ -1,0 +1,15 @@
+> Pixel p = new Pixel(900);
+> p.getValue()
+255  (int)
+
+> p.setValue(-148);
+> p.getValue()
+0  (int)
+
+> p.setValue(200);
+> p.getValue()
+200  (int)
+
+> p.setValue(530);
+> p.getValue()
+255  (int)

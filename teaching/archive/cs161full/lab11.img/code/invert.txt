@@ -1,0 +1,14 @@
+> Pixel p = new Pixel(50);
+> p.invertIntensity();
+> p.getValue()
+205  (int)
+
+> p.setValue(254);
+> p.invertIntensity();
+> p.getValue()
+1  (int)
+
+> p.setValue(127);
+> p.invertIntensity();
+> p.getValue()
+128  (int)

@@ -1,0 +1,270 @@
+## CS 161 - Intro to Computer Science
+
+### Homework: Robots
+
+In class we talked about the importance of modularity and abstraction to create larger-scale software applications. In the modularity step, the software designer breaks down the desired product into smaller, easy-to-program pieces. After each of these pieces have been programmed and tested, one can then focus on putting them together to obtain the desiderata.
+
+For this assignment, your task is to program a robot that can move around, shake its head, wave, etc. Then you`ll program a dance routine involving a pair of robots.
+
+#### Student Outcomes
+
+- Practice using abstraction and modularity
+- Using with object interaction
+- Writing a simple loop
+
+#### Required Files
+
+The following file(s) have been provided for this assignment.
+
+- [Hwk4_Robot.zip](Hwk4_Robot.zip)
+
+#### Preliminary: The Canvas` Coordinate System (Do Not Skip!)
+
+- Download Hwk4_Robot.zip and extract it. You can open this project by either double-clicking on the `package.bluej` file inside the project folder. You should see the following classes:
+
+    <img width="350px" src="figures/robotproj.png" />
+
+- Create a `Circle` object, and take a look at its methods. You should notice a new one
+  called `moveTo(int x, int y)`. Call this method a few times on certain inputs for `x` and `y`,
+  and take note on where it positions the `Circle`. Of particular interest
+  is the location `(0,0)`. Notice how it is the _top-left corner_ of the imaginary the box
+  enclosing the `Circle` that is placed at `(0,0)`. This implies that the `moveTo(int x, int y)` method would
+  move any Circle to the given location relative to that imaginary corner, we'll call that the <b>reference point</b>
+  of the `Circle`.
+
+    <img width="300" border="1" src="figures/refpts.png"/>
+
+- Test out the `moveTo(int x, int y)` methods belonging to the Square and the Triangle next. Where are the reference points for these two shapes? Pay particular attention to the Triangle.
+
+#### Part 1: Defining a Robot Class
+
+- Notice the new class, `Robot`. Double-click on it to open up its source-code. Aside from the class header and some comments, this file is again pretty empty. Now, to design a robot, we need to think about what state and behaviors it should have. Let's focus on its state initially. For sake of consistency, we'll assume in this assignment that our robot should look like the one depicted below:
+
+  <img width="300" border="1" src="figures/robot.png" />
+
+  State: What should a Robot remember about itself? For starters, it should probably remember that it has a head, two arms, a body, and feet. There may be more state to be added later, but let's focus on these for now. Go ahead and declare these fields.
+
+- At this point, you've merely declared the fields' existence. Notice that we have yet to assign any values to these fields. Next, let's define the default constructor (that's the one that accepts no inputs). Recall that the constructor's purpose is to let you instantiate an object of a class and to serve-up a default state for the newly created object. This means the constructor needs to assign values to your fields. For each field, you need to instantiate it using the syntax you've seen in previous assignments:
+
+  ```java
+  objectName = new ClassName();
+  ```
+
+- For instance, you should have declared the `feet` field as a `Triangle`. To instantiate it you would write:
+
+  ```java
+  this.feet = new Triangle();
+  ```
+
+- Now instantiate the remaining fields before compiling and moving on.
+
+- Now that the constructor is written, go back to BlueJ's Project View and try to create a Robot object in the workbench. Yikes! It doesn't look much like a Robot, does it? The body parts seem to be there, but they're way out of place and some sizes are completely wrong. Alas, there's more work to be done in the constructor to get these pieces into the right place. Here's how I want things positioned:
+
+  - The canvas you're working on is 500 by 500 pixels. You cannot change these dimensions.
+  - The head should have a diameter of 30. The top of the head should be 100 pixels down from the top of the canvas. The head is to be centered in the middle of the canvas.
+  - The body is a 60 by 60 Square, and should be centered under the head. The bottom of the head and the top of the body must be at the same level.
+  - The arms should be colored magenta, and each arm has a diameter of 15, and must be aligned with the top of the body. Each arm must be a distance of 5 pixels away from the body.
+  - The feet is a triangle with a height of 30 and a base of 40. It is horizontally centered with the body. The top of the feet and the bottom of the body are at the same level
+
+- Let's go back into the constructor's source code. Write the code to get the Robot's parts colored and sized appropriately. Then, move them into the proper coordinates (remember how to boss these objects around using the "dot" notation) Work on each body part separately, matching the following descriptions.
+
+  **DON'T IGNORE THIS:** We strongly suggest you draw out the coordinate system with dimensions and the expected coordinates of each Shape on a piece of paper before you start writing the code to move the Shapes. The design and planning of algorithms is often overlooked, even by expert programmers. Take our word for it, it will save you a ton of time to do this now. We've even gotten it started for you, so no excuses.
+
+  <img width="450" border="1" src="figures/dimensions.png" />
+
+- Important: Once you figure out all the shapes' initial coordinates, use each shape's moveTo() method to get them to the right place!
+
+#### Part 2: Robotic Motions
+
+- With the state and constructor defined, it's time to start thinking about some of the robot's behaviors, i.e., actions it can perform. A class' behaviors is implemented by a set of instance methods. In this part, we'll define a couple simple methods.
+
+- Write a method, `shakeHead()` that causes the Robot to shake its head horizontally (see video below).
+
+<video width="420" controls>
+  <source src="https://i.gyazo.com/02a78f5a6a8a3555af5f2b4694070964.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Thanks to abstraction, we can ignore how to get the head to move smoothly (since Circle objects already provide that functionality!) and focus on making the movements appear like it's shaking side to side. This method should only be a few lines of code. Test and ensure it is working.
+
+- Write a method, `waveHand()` that causes the Robot to raise its left hand up and down twice (see video above). Again, this method should only be a few line of code.
+
+- Isn't abstraction and modularity great? Because the coders before us had ensured Circles (and other objects) are expertly coded and tested, we don't need to worry about their implementation details. We simply called their existing methods to do what we want.
+
+#### Part 3: Behaviors - Adding Movement
+
+- Lets give the Robot the ability to move around. Particularly, we're interested in providing methods to move the entire robot (all body parts) vertically and horizontally. Provide the methods,
+
+  - `moveHorizontal(int distance)`
+  - `moveVertical(int distance)`
+
+  These methods will move the robot horizontally or vertically by the specified distance.
+
+- Again, the key is to trust that the individual shapes' methods are expertly programmed and can be re-used to do what you want!
+
+#### Part 4: Robot Learns Teleportation
+
+- Moving the Robot by specific distances is all well and good, but a cooler bot can teleport to specific coordinates on the canvas, just like how the Shapes could. Before we can get started on writing such a method, we need to do some more planning.
+
+- Remember how each Shape had their **reference points** to move by? We need to define one for the Robot. Draw an imaginary box around your Robot, we will make the top-left corner of that imaginary box our reference point.
+
+  <img width="200px" src="figures/refpts2.png" />
+
+- The reference point can be represented by the current `x` and `y` coordinates of that top-left corner. That means the Robot now needs to remember these two things, which are integers. Go back up in your source-code and add these integer fields.
+
+- After you've added these two fields, you need to think about how to assign them values. Well, the first place they should get assigned values is inside the constructor. Based on where the constructor positions the robot, you should be able to easily compute the coordinates for that top-left imaginary corner. Once you know the coordinates, assign them to your new fields.
+
+- Your move methods must also update the coordinates based on the distance moved. That is, create a new Robot object, and inspect its coordinates. Then move it horizontally and vertically. Inspect its coordinates again. They should reflect its current location.
+
+- We can finally add the following method:
+
+  ```java
+  /**
+  * Moves the Robot to the specified location
+  */
+  public void moveTo(int newX, int newY)
+  ```
+
+where `x` and `y` are the coordinates for the Robot's reference point.
+
+- When writing this method, it might be tempting to try to call the various `moveTo()` methods on each individual body part. But if you think about it long enough, you'll see that it is very difficult to determine where each shape must jump to.
+
+  In the previous section, we spent all this time writing writing methods that can move the entire robot around (vertically and horizontally). Here, you're being asked to move it to a specific location. You could write another method to move ever parts of a robot to this location, but that seems redundant, doesn't it? Your task is to re-use the methods you just wrote to get your Robot to the right location. But how? The Robot's `moveVertical(int distance)` and `moveHorizontal(int distance)` take distances as input parameters, not coordinates. But think about all the information you have to your disposal... There was a reason the Robot needs to remember its own coordinates, after all.
+
+- Here are a few examples to check your work.
+
+    <table width="100%">
+    <tr>
+    <td align="center" width="25%">
+    (1) After instantiation<br/> <code>Robot robo = new Robot();</code><br/>
+    <img border="1" width="150" src="figures/robot.png"/>
+    </td>
+    <td align="center" width="25%">
+    (2) Then calling<br/> <code>robo.moveTo(0,0);</code><br/>
+    <img border="1" width="150" src="figures/moveTo1.png"/>
+    </td>
+    <td align="center" width="25%">
+    (3) Then calling<br/> <code>robo.moveTo(250,250);</code><br/>
+    <img border="1" width="150" src="figures/moveTo2.png"/>
+    </td>
+    <td align="center" width="25%">
+    (4) Then calling<br/> <code>robo.moveTo(200,100);</code><br/>
+    <img border="1" width="150" src="figures/robot.png"/>
+    </td>
+    </tr>
+    </table>
+
+  Hint: If your code for implementing the Robot's `moveTo()` is more than a few lines, your code is probably off-base.
+
+#### Part 5: A Pair of Robots
+
+- Playing with one Robot from the BlueJ Workbench is cool and all, but do you know what's cooler? Playing with two Robots. Create a new class called `RobotPair`.
+
+- State: A `RobotPair` remembers two Robot objects.
+
+- Constructor: The constructor of this class instantiates the two fields with calls to the Robot constructor. Next, you'll want to move these robots so that they're side-by-side. Move one Robot to `(125,200)` and the other one to `(275,200)`.
+
+- Behavior: Now that we can manage two Robots, let's write some methods that manipulate both of them!
+
+- Now write the following methods. The first one will move the Robots apart by a distance of 50, and conversely, the second method moves them together closer by a distance of 50.
+
+  ```java
+  /**
+   * Moves the Robot apart along the horizontal axis by a distance of 50.
+   */
+  public void moveApart()
+
+  /**
+   * Moves the Robot closer together along the horizontal axis by a distance of 50.
+   */
+  public void moveTogether()
+  ```
+
+- Before moving on, create a RobotPair object on BlueJ's workbench, and test out your methods.
+
+- Almost done. Write a method that will ask the Robots to perform a dance routine. This method has the following signature:
+
+  ```java
+  /**
+   * Makes the Robots do a special dance
+   */
+  public void dance()
+  ```
+
+- Important: Your dance routine must employ at least two loops. Here's a snippet of my dance routine below. I simply ask the Robots to move apart twice, then move together twice, and repeat. Feel free to create your own dance routine, adding even more methods if necessary. Also remember that all those Robot's methods you wrote earlier are available to you (e.g., moveVertical, moveHorizontal, moveTo, ...).
+
+<video width="420" controls>
+  <source src="https://gyazo.com/c71245b5f41e631a7aed80e6642ec3da.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+#### Program Defensively
+
+You can't control how another user or program chooses to use your methods. For each method, think critically about all the things that could go wrong and cause an unintended result (e.g., a runtime error, infinite loop/recursion, etc.). Chances are, I`ll be trying all kinds of inputs (negative values, zeroes, nulls, empty-strings, etc.) when I grade your program. The mark of a good programmer is one that can anticipate such scenarios ahead of time and ensure that their program handles all sorts of errors gracefully.
+
+#### Commenting
+
+Each and every method should have a "javadoc-style" comment above it (the ones that use `/* ... */`). For full credit, you should use the @param and @return tags as appropriate in these method comments. Each instance variable (field) should have a brief comment as well. Don't forget the main comment at the top of the class either - I`m looking for more than just a sentence or two.
+
+#### Grading
+
+```
+This assignment will be graded out of 80 points:
+
+[10pt]  Your Robot constructor properly initializes the shape components
+        of the Robot and get them into the proper positions
+
+[5pt]   The Robot's shakeHead() method slowly moves the head to the left,
+        right, and back..
+
+[5pt]   The Robot's waveHand() method slowly raises the robot's hand twice.
+
+[5pt]   The Robot's moveHorizontal() method moves the entire Robot
+        horizontally by the given distance
+
+[5pt]   The Robot's movevertical() method moves the entire Robot vertically
+        by the given distance
+
+[20pt]  The Robot's moveTo() method will move the entire Robot to the given
+        coordinate. You must track its current position in fields and use
+        the moveHorizontal() and moveVertical() methods.
+
+[5pt]   Your RobotPair class has two Robot references stored as fields and
+        its constructor instantiates the Robots.
+
+[5pt]   Your RobotPair's moveTogether() will move the pair closer together.
+
+[5pt]   Your RobotPair's moveApart() will move the pair further apart.
+
+[10pt]  Your RobotPair's dance() method will cause the pair to perform a
+        silly dance routine.
+
+[5pt]   All methods include a JavaDocs comment describing its interface.
+```
+
+#### Submitting Your Assignment
+
+After you have completed the assignment, use the following to submit your work.
+Exit BlueJ
+
+- Open your computer`s File Finder (some times called File Explorer). Locate the project folder.
+
+- Right-click on the project folder, then:
+
+  - If using Windows, select Send to then Zip file
+  - If using MacOS, select Compress ... items
+  - This step takes your selected creates a .zip file that you will submit to me.
+
+  It`s really important you got this right. If you have doubts, ask one of us to check for you! I recommend that you double-check by opening the zip file, and investigating the contents to ensure that all the files are in there.
+
+- Navigate to our course page on Canvas and click on the assignment to which you are submitting.
+
+- Click on Submit Assignment, and you should be able to "browse" for your file
+
+- Select the `.zip` you just created, and click Submit Assignment again to upload it.
+
+- You may submit as often as you`d like before the deadline. I will grade the most recent copy.
+
+#### Credits
+
+Written by David Chiu and Joel Ross.
