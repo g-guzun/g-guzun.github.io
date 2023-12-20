@@ -21,5 +21,5 @@
 
 ### Teaching Certifications and Credentials
 
-- Creating an Inclusive and Supportive Online Learning Environment
+- The Association of College and University Educators (ACUE): Creating an Inclusive and Supportive Online Learning Environment (2022)
 
