@@ -7,6 +7,7 @@
 - Chinmay Khachane
 - Akanksha Joshi
 - Cindy Zhang
+- Anurag Deotale
 
 ##### Past Lab Members
 
