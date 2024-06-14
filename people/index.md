@@ -6,6 +6,7 @@
 - Divik Shrivastava
 - Chinmay Khachane
 - Cindy Zhang
+- Anurag Deotale
 
 ##### Past Lab Members
 
