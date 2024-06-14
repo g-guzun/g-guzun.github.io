@@ -3,13 +3,13 @@
 
 ##### Current Lab Members
 
-- Meera Tresa Sebastian
+- Divik Shrivastava
 - Chinmay Khachane
-- Akanksha Joshi
 - Cindy Zhang
 
 ##### Past Lab Members
 
+- Meera Tresa Sebastian
 - Utsav Jain
 - Yinghua Qin
 - Sachin Pothukuchi
