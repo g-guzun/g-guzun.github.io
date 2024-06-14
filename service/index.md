@@ -2,6 +2,7 @@
 
 - Proposal Review Panelist: National Science Foundation (NSF). CISE, 2023
 - Proposal Reviewer: Chilean funding agency for scientific and technological research, 2019
+- Proposal Reviewer: Moldovan National Agency for Research and Development (Agenția Națională pentru Cercetare și Dezvoltare), 2024
 
 ### Journal Reviewer
 
