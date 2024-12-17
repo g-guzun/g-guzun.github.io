@@ -2,13 +2,13 @@
 
 
 ##### Current Lab Members
-
+- Poorna Ravuri
 - Divik Shrivastava
 - Chinmay Khachane
-- Cindy Zhang
+
 
 ##### Past Lab Members
-
+- Cindy Zhang
 - Meera Tresa Sebastian
 - Utsav Jain
 - Yinghua Qin
