@@ -1,7 +1,7 @@
 - slug: bsv
   title: Bit-Sliced Vector (BSV)
   tagline: High-performance bit-sliced vector operations for AI workloads
-  image: /assets/projects/bsi.svg
+  image: /assets/projects/bsv.png
   repos:
     - name: bsiCPP
       url: https://github.com/gguzunsjsu/bsiCPP
@@ -27,7 +27,7 @@
 - slug: sparse-attn-unified
   title: Sparse Attention Unified
   tagline: SSA sparse attention training with SOCKET and Soft-SAAP backends
-  image: /assets/projects/sparse-attn-unified.svg
+  image: /assets/projects/sparse-attn-unified.png
   repos:
     - name: sparse-attn-unified
       url: https://github.com/gguzunsjsu/sparse-attn-unified
