@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% assign project = nil %}
+{% for p in site.data.projects %}
+  {% if p.slug == page.slug %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+
+{% if project == nil %}
+  <h2>Project not found</h2>
+  <p><a href="/projects/">Back to Projects</a></p>
+{% else %}
+  <h2>{{ project.title }}</h2>
+
+  <div class="project-hero">
+    <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
+  </div>
+
+  <div class="project-meta">
+    <p class="tagline">{{ project.tagline }}</p>
+  </div>
+
+  <div class="project-repos">
+    <h4>Source Code</h4>
+    <ul>
+      {% for repo in project.repos %}
+        <li><a href="{{ repo.url }}" target="_blank" rel="noopener noreferrer">{{ repo.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {{ project.description | markdownify }}
+
+  <div class="project-section">
+    <h3>Contributors</h3>
+    <p class="placeholder">To be added.</p>
+  </div>
+
+  <div class="project-section">
+    <h3>Publications</h3>
+    <p class="placeholder">To be added.</p>
+  </div>
+
+  <p><a href="/projects/">&larr; Back to all projects</a></p>
+{% endif %}

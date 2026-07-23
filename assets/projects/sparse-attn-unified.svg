@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Sparse Attention Unified">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1b4e"/>
+      <stop offset="100%" stop-color="#5b2d8e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g transform="translate(200, 80)">
+    <rect x="0" y="0" width="240" height="200" fill="none" stroke="#c77dff" stroke-width="2" opacity="0.5"/>
+    <circle cx="30" cy="30" r="8" fill="#e0aaff"/>
+    <circle cx="90" cy="30" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="150" cy="30" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="210" cy="30" r="8" fill="#c77dff"/>
+    <circle cx="30" cy="90" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="90" cy="90" r="8" fill="#e0aaff"/>
+    <circle cx="150" cy="90" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="210" cy="90" r="8" fill="#e0aaff"/>
+    <circle cx="30" cy="150" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="90" cy="150" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="150" cy="150" r="8" fill="#e0aaff"/>
+    <circle cx="210" cy="150" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="30" cy="210" r="8" fill="#c77dff"/>
+    <circle cx="90" cy="210" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="150" cy="210" r="8" fill="#3a3a3a" opacity="0.3"/>
+    <circle cx="210" cy="210" r="8" fill="#c77dff"/>
+    <line x1="30" y1="30" x2="90" y2="90" stroke="#e0aaff" stroke-width="2" opacity="0.6"/>
+    <line x1="90" y1="90" x2="150" y2="150" stroke="#e0aaff" stroke-width="2" opacity="0.6"/>
+    <line x1="30" y1="210" x2="210" y2="30" stroke="#c77dff" stroke-width="2" opacity="0.4"/>
+  </g>
+  <text x="40" y="48" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Sparse Attention Unified</text>
+  <text x="40" y="330" fill="#e0aaff" font-family="Arial, Helvetica, sans-serif" font-size="16">SSA ù SOCKET ù Soft-SAAP ù Llama 1B</text>
+</svg>

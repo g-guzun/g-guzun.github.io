@@ -1,0 +1,65 @@
+- slug: bsv
+  title: Bit-Sliced Vector (BSV)
+  tagline: High-performance bit-sliced vector operations for AI workloads
+  image: /assets/projects/bsi.svg
+  repos:
+    - name: bsiCPP
+      url: https://github.com/gguzunsjsu/bsiCPP
+    - name: bsiPytorch
+      url: https://github.com/gguzunsjsu/bsiPytorch
+  description: |
+    Bit-Sliced Vectors (BSV) are a compact representation for numeric and categorical data that enables fast analytical queries using bitwise operations. This project provides two complementary implementations:
+
+    **bsiCPP** is a C++ library for building, compressing, and querying bit-sliced vectors over large datasets. It supports hybrid compressed and non-compressed bit-vector operations and is designed for scalable data management workloads.
+
+    **bsiPytorch** extends BSV into the deep learning stack as a PyTorch + CUDA extension. It supports GPU-accelerated BSI quantization and compression experiments, tensor-core dot-product kernels, and end-to-end LLM evaluation benchmarks (e.g., OPT models on LAMBADA) to study the trade-offs between model accuracy, compression, and inference performance.
+
+- slug: fasta
+  title: FASTA
+  tagline: Fast analytics and sequence-oriented data processing
+  image: /assets/projects/fasta.svg
+  repos:
+    - name: fasta
+      url: https://github.com/gguzunsjsu/fasta
+  description: |
+    FASTA is a research software project focused on efficient data processing and analytics. The codebase supports experiments in scalable data management and is developed as part of ongoing work at the intersection of high-performance computing and data-intensive applications.
+
+    Source code and documentation are available on GitHub. Additional project details, benchmarks, and usage examples will be added as the repository matures.
+
+- slug: sparse-attn-unified
+  title: Sparse Attention Unified
+  tagline: SSA sparse attention training with SOCKET and Soft-SAAP backends
+  image: /assets/projects/sparse-attn-unified.svg
+  repos:
+    - name: sparse-attn-unified
+      url: https://github.com/gguzunsjsu/sparse-attn-unified
+  description: |
+    Sparse Attention Unified is an SSA (Sparse Sparse Attention) training framework with pluggable **SOCKET** (soft-LSH) and **Soft-SAAP** (Gumbel-Softmax clusters) sparse backends. It targets efficient training of sparse attention models such as **Llama 3.2 1B** on a single **H100** GPU.
+
+    During training, both full attention (FA) and sparse attention (SA) streams run at every layer; an alignment loss keeps sparse outputs close to full attention. At inference, only the sparse backend runs, enabling faster decoding while preserving model quality.
+
+    The repository includes HPC setup scripts for the SJSU CoE cluster, smoke tests, SLURM job templates, and configuration files for switching between SOCKET and SAAP backends.
+
+- slug: ares
+  title: ARES
+  tagline: Java framework for bit-sliced indexing and analytics
+  image: /assets/projects/ares.svg
+  repos:
+    - name: ARES
+      url: https://github.com/gguzunsjsu/ARES
+  description: |
+    ARES is a Java-based research framework built around Bit-Sliced Indexing (BSI) for data analytics and query processing. The project integrates BSI data structures with supporting libraries to enable experiments in compressed bitmap indexing, query optimization, and large-scale data exploration.
+
+    ARES complements the C++ and PyTorch BSI implementations by providing a JVM-based platform for prototyping algorithms, running benchmarks, and integrating with Java-centric data pipelines.
+
+- slug: clp
+  title: CLP
+  tagline: A platform for competitive learning
+  image: /assets/projects/clp.svg
+  repos:
+    - name: clp
+      url: https://github.com/gguzunsjsu/clp
+  description: |
+    CLP (Competitive Learning Platform) is a web-based platform for running and evaluating competitive learning experiments. Built with **Flask**, **Celery**, and **Redis**, it allows instructors and researchers to define evaluation methods, manage student submissions, and execute code asynchronously in a controlled environment.
+
+    The platform supports customizable scoring methods, batch student imports, and an admin interface for managing competitions. CLP was introduced in the EC-TEL 2022 paper *"CLP: A Platform for Competitive Learning"* and is designed to support technology-enhanced learning research at scale.

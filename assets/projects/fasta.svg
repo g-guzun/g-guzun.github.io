@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="FASTA">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3c34"/>
+      <stop offset="100%" stop-color="#2d6a4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g font-family="monospace" font-size="14" fill="#95d5b2" opacity="0.7">
+    <text x="48" y="100">&gt;seq_001 ATGCGATCGATC</text>
+    <text x="48" y="130">&gt;seq_002 GCTAGCTAGCTA</text>
+    <text x="48" y="160">&gt;seq_003 TTAGCCGGATCC</text>
+    <text x="48" y="190">&gt;seq_004 CCGGTTAAACGG</text>
+    <text x="48" y="220">&gt;seq_005 AATTCCGGTTAA</text>
+    <text x="48" y="250">&gt;seq_006 GGCCTTAACCGG</text>
+  </g>
+  <path d="M420 80 L520 180 L420 280 L320 180 Z" fill="none" stroke="#52b788" stroke-width="4" opacity="0.6"/>
+  <circle cx="420" cy="180" r="48" fill="#40916c" opacity="0.85"/>
+  <text x="420" y="188" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">FAST</text>
+  <text x="40" y="48" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">FASTA</text>
+  <text x="40" y="330" fill="#b7e4c7" font-family="Arial, Helvetica, sans-serif" font-size="16">Fast analytics &amp; data processing</text>
+</svg>
