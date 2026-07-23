@@ -16,15 +16,13 @@
 
 - slug: fasta
   title: FASTA
-  tagline: Fast analytics and sequence-oriented data processing
+  tagline: Approximate nearest neighbour search using cosine similarity
   image: /assets/projects/fasta.svg
   repos:
     - name: fasta
       url: https://github.com/gguzunsjsu/fasta
   description: |
-    FASTA is a research software project focused on efficient data processing and analytics. The codebase supports experiments in scalable data management and is developed as part of ongoing work at the intersection of high-performance computing and data-intensive applications.
-
-    Source code and documentation are available on GitHub. Additional project details, benchmarks, and usage examples will be added as the repository matures.
+    FASTA (**F**ast **A**ngle-Based **S**earch **T**arget **A**cquisition) is an approximate nearest neighbour search library for high-dimensional vectors using cosine similarity.
 
 - slug: sparse-attn-unified
   title: Sparse Attention Unified

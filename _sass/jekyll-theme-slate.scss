@@ -486,3 +486,146 @@ Small Device Styles
   }
 
 }
+
+/*******************************************************************************
+Projects Page
+*******************************************************************************/
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  margin: 32px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects-grid li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-card {
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+}
+
+.project-card-image {
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  display: block;
+}
+
+.project-card-body {
+  padding: 18px 20px 22px;
+}
+
+.project-card-body h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.project-card-body .tagline {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+.project-card-body .learn-more {
+  color: #0F79D0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.project-hero {
+  margin: 0 0 28px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-hero img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  display: block;
+}
+
+.project-meta {
+  margin: 20px 0 28px 0;
+}
+
+.project-meta .tagline {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  margin: 0;
+}
+
+.project-repos {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background: #f8f8f8;
+  border-left: 4px solid #0F79D0;
+  border-radius: 0 6px 6px 0;
+}
+
+.project-repos h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.project-repos ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-section {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.project-section h3 {
+  margin-bottom: 12px;
+}
+
+.project-section .placeholder {
+  color: #888;
+  font-style: italic;
+}
